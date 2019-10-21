@@ -1,7 +1,4 @@
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
 <style>
 body {
   background-color: #000000;
@@ -15,10 +12,21 @@ body {
   margin-bottom: 30px;
 }
 </style>
-<h1>Creepypasta</h1>
-<div style="background-color: #ffffff;height: 4px;"></div><br/>
+<script>
+function myFunction() {
+  var x = document.getElementById("value").value;
+  x = x.split("\n").join("<p>");
+  document.getElementById("read").innerHTML = x;
+}
+</script>
+
+<textarea rows="2" cols="50" id="value" onchange="myFunction()"></textarea><br/>
+<h1>The Story</h1>
+<div style="background-color: #ffffff;height: 4px;"></div>
 <body>
-<a href="http://nvhuy95.github.io/creepy/Cinema.html"><button align="center" class="btn btn-info btn-lg">Cinema</button></a>
-<a href="http://nvhuy95.github.io/creepy/my friend.html"><button align="center" class="btn btn-info btn-lg">MY FRIEND</button></a>
+<br/>
+<div id="read">
+
+</div>
 </body>
 </html>
